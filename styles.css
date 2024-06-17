@@ -1,0 +1,147 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    margin: 0;
+}
+
+.full-screen-container {
+    --border-color: rgba(255, 255, 255, 0.2);
+    --text-color: #ffffff;
+    background: url("jase-bloor-oCZHIa1D4EU-unsplash.jpg") no-repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 50% 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: transparent;
+    color: var(--text-color);
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 2px var(--border-color);
+}
+
+.login-container .title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -4px;
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.login-container .input-box {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.login-container .input-box > input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid var(--border-color);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-left: 20px;
+    transition: transform 500ms ease-in-out;
+}
+
+.login-container .input-box > input:hover,
+.login-container .input-box > input:focus {
+    transform: translateY(-2px);
+}
+
+.input-box > box-icon {
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.input-box > input::placeholder {
+    color: var(--text-color);
+   
+}
+
+.massage {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.massage  label input {
+    accent-color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.massage  a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.massage a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: -20px 0 -5px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    letter-spacing: 2px;
+    background: linear-gradient(70deg,  #000000, #05021d, 
+    #11095e,#660808, #fff7f7);
+}
+
+
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+}
+.register-link p a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+
